@@ -6,9 +6,10 @@ h1{
 body{
 	background-image:url("https://wallpapercave.com/wp/wp2234801.jpg");
 }
-#intro{
-	font-family: serif;
-	color: yellow;
-	position: center;
-
+div {
+  background-color: white;
+  width: 400px;
+  border: 25px white;
+  padding: 25px;
+  margin: 25px;
 }
