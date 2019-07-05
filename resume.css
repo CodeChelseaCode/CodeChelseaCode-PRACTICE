@@ -1,0 +1,48 @@
+#nav {
+  width: 1200px;
+  padding: 25px;
+  margin: 25px;
+  height: 50px;
+}
+#nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: auto;
+  overflow: hidden;
+  width: 1200px;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 90px;
+  text-decoration: none;
+  font-family: Courier New; 
+  font-size: 30px;
+}
+
+}
+.boxed {
+  width: 1200px;
+  margin:0px;
+  padding:0px;
+  height: 41px;
+  left: 0;
+  width: 100%;
+}
+ body{
+  background-color: pink;
+    margin:0px;
+    padding:0px;
+ }
+h1{
+  color:white;
+  text-align: center;
+  font-family: Courier New;
+  font-weight: normal;
+}
