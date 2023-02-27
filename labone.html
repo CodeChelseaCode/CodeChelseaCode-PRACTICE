@@ -4,7 +4,7 @@
 	<title>Chelsea's Drawing</title>
 	<style>
 		canvas {
-			background-color: skyblue;
+			background-image: linear-gradient(to bottom,grey,skyblue 95%);
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -19,6 +19,7 @@
 		
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
+		canvas.style.border = "2 px solid black";
 		
 		// Draw the sun
 		ctx.beginPath();
@@ -26,7 +27,7 @@
 		ctx.fillStyle = "yellow";
 		ctx.fill();
 		
-		// Draw the trees
+		// Draw the tree trunk
 		ctx.beginPath();
 		ctx.moveTo(200, canvas.height - 100);
 		ctx.lineTo(200, canvas.height - 300);
@@ -34,19 +35,30 @@
 		ctx.lineTo(150, canvas.height - 100);
 		ctx.fillStyle = "brown";
 		ctx.fill();
-		
-		ctx.beginPath();
-		ctx.moveTo(400, canvas.height - 100);
-		ctx.lineTo(400, canvas.height - 300);
-		ctx.lineTo(350, canvas.height - 300);
-		ctx.lineTo(350, canvas.height - 100);
+
+        ctx.beginPath();
+		ctx.moveTo(1000, canvas.height - 100);
+		ctx.lineTo(1000, canvas.height - 300);
+		ctx.lineTo(950, canvas.height - 300);
+		ctx.lineTo(950, canvas.height - 100);
 		ctx.fillStyle = "brown";
+		ctx.fill();
+
+		//draw leaves
+		ctx.beginPath();
+		ctx.arc(175,canvas.height-345,100,0,Math.PI*2);
+		ctx.fillStyle= "green";
+		ctx.fill();
+
+		ctx.beginPath();
+		ctx.arc(975,canvas.height-345,100,0,Math.PI*2);
+		ctx.fillStyle= "green";
 		ctx.fill();
 		
 		// Draw the house
 		ctx.beginPath();
 		ctx.rect(500, canvas.height - 300, 200, 200);
-		ctx.fillStyle = "white";
+		ctx.fillStyle = "yellow";
 		ctx.fill();
 		
 		// Draw the roof
@@ -76,14 +88,21 @@
 		
 		// Draw the grass
 		ctx.fillStyle = "green";
-		for (var i = 0; i < canvas.width; i += 10) {
+		for (var i = 0; i < canvas.width; i += 5) {
 			var y = canvas.height - 100;
 			ctx.beginPath();
 			ctx.moveTo(i, y);
 			ctx.lineTo(i + 5, y - 10);
-			ctx.lineTo(i + 10, y);
+			ctx.lineTo(i + 15, y);
 			ctx.fill();
+		
 		}
+		//Draw grass under part
 
+		ctx.beginPath();
+		ctx.rect(0, canvas.height - 100, 3000, 200);
+		ctx.fillStyle = "green";
+		ctx.fill();
+		
 	</script>
 </body
