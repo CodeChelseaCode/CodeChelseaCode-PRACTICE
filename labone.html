@@ -1,108 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="labone.css"/>
 	<title>Chelsea's Drawing</title>
-	<style>
-		canvas {
-			background-image: linear-gradient(to bottom,grey,skyblue 95%);
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-	</style>
 </head>
 <body>
+	<script src="labone.js"></script>
 	<canvas id="canvas"></canvas>
-	<script>
-		var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
-		
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
-		canvas.style.border = "2 px solid black";
-		
-		// Draw the sun
-		ctx.beginPath();
-		ctx.arc(100, 100, 50, 0, Math.PI*2);
-		ctx.fillStyle = "yellow";
-		ctx.fill();
-		
-		// Draw the tree trunk
-		ctx.beginPath();
-		ctx.moveTo(200, canvas.height - 100);
-		ctx.lineTo(200, canvas.height - 300);
-		ctx.lineTo(150, canvas.height - 300);
-		ctx.lineTo(150, canvas.height - 100);
-		ctx.fillStyle = "brown";
-		ctx.fill();
-
-        ctx.beginPath();
-		ctx.moveTo(1000, canvas.height - 100);
-		ctx.lineTo(1000, canvas.height - 300);
-		ctx.lineTo(950, canvas.height - 300);
-		ctx.lineTo(950, canvas.height - 100);
-		ctx.fillStyle = "brown";
-		ctx.fill();
-
-		//draw leaves
-		ctx.beginPath();
-		ctx.arc(175,canvas.height-345,100,0,Math.PI*2);
-		ctx.fillStyle= "green";
-		ctx.fill();
-
-		ctx.beginPath();
-		ctx.arc(975,canvas.height-345,100,0,Math.PI*2);
-		ctx.fillStyle= "green";
-		ctx.fill();
-		
-		// Draw the house
-		ctx.beginPath();
-		ctx.rect(500, canvas.height - 300, 200, 200);
-		ctx.fillStyle = "yellow";
-		ctx.fill();
-		
-		// Draw the roof
-		ctx.beginPath();
-		ctx.moveTo(500, canvas.height - 300);
-		ctx.lineTo(600, canvas.height - 400);
-		ctx.lineTo(700, canvas.height - 300);
-		ctx.fillStyle = "brown";
-		ctx.fill();
-		
-		// Draw the door
-		ctx.beginPath();
-		ctx.rect(600, canvas.height - 200, 50, 100);
-		ctx.fillStyle = "brown";
-		ctx.fill();
-		
-		// Draw the windows
-		ctx.beginPath();
-		ctx.rect(525, canvas.height - 250, 50, 50);
-		ctx.fillStyle = "lightblue";
-		ctx.fill();
-		
-		ctx.beginPath();
-		ctx.rect(625, canvas.height - 250, 50, 50);
-		ctx.fillStyle = "lightblue";
-		ctx.fill();
-		
-		// Draw the grass
-		ctx.fillStyle = "green";
-		for (var i = 0; i < canvas.width; i += 5) {
-			var y = canvas.height - 100;
-			ctx.beginPath();
-			ctx.moveTo(i, y);
-			ctx.lineTo(i + 5, y - 10);
-			ctx.lineTo(i + 15, y);
-			ctx.fill();
-		
-		}
-		//Draw grass under part
-
-		ctx.beginPath();
-		ctx.rect(0, canvas.height - 100, 3000, 200);
-		ctx.fillStyle = "green";
-		ctx.fill();
-		
-	</script>
-</body
+</body>
+</html>

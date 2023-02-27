@@ -1,43 +1,6 @@
-.house {
-  width: 100px;
-  height: 80px;
-  position: relative;
-}
-
-.roof {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 30px solid #9B59B6;
+canvas {
+  background-image: linear-gradient(to bottom,grey,skyblue 95%);
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.chimney {
-  width: 20px;
-  height: 40px;
-  background-color: #E74C3C;
-  position: absolute;
-  top: -40px;
-  right: 0;
-}
-
-.door {
-  width: 30px;
-  height: 60px;
-  background-color: #F1C40F;
-  position: absolute;
-  bottom: 0;
-  left: 35px;
-}
-
-.window {
-  width: 30px;
-  height: 30px;
-  background-color: #1ABC9C;
-  position: absolute;
-  top: 20px;
-  left: 20px;
 }
