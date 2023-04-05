@@ -2,8 +2,8 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Chelsea</h1>
+    <div className="Logo">
+      <img src="../WebPics/ChelseaLogo.png" alt="logo" width={500} height={500} />
     </div>
   );
 }
