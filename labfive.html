@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sound Effect Machine</title>
+  </head>
+  <body>
+    <h1>Sound Effect Machine</h1>
+    <button id="button1" onclick="playSound('sound1.mp3')">Button 1</button>
+    <button id="button2" onclick="playSound('sound2.mp3')">Button 2</button>
+    <button id="button3" onclick="playSound('sound3.mp3')">Button 3</button>
+    <button id="button4" onclick="playSound('sound4.mp3')">Button 4</button>
+    <button id="button5" onclick="playSound('sound5.mp3')">Button 5</button>
+
+    <script>
+      function playSound(soundFile) {
+        var audio = new Audio(soundFile);
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
