@@ -83,6 +83,21 @@ var ctx = canvas.getContext("2d");
 			ctx.fill();
 		
 		}
+		// Set the caption text properties
+		ctx.font = "20px Arial";
+		ctx.fillStyle = "white";
+		ctx.textAlign = "center";
+
+// Set the caption text
+		var captionText = "Home Sweet Home!";
+
+// Calculate the position of the caption text
+		var x = canvas.width / 2; // Centered horizontally
+		var y = canvas.height - 700; // Positioned near the bottom
+
+// Add the caption text to the canvas
+		ctx.fillText(captionText, x, y);
+
 		//Draw grass under part
 
 		ctx.beginPath();
