@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume with Search</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Resume</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="form-inline my-2 my-lg-0 ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="button" onclick="searchResume()">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <h1>Chelsea Rice</h1>
+    <p>Future Software Developer</p>
+    
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming languages: Java, JavaScript, C#</li>
+      <li>Web development: HTML, CSS, Bootstrap</li>
+      <li>Frameworks:React</li>
+    </ul>
+    
+    <h2>Experience</h2>
+    <h3>Software Developer Intern, Linkedin</h3>
+    <p>January 2019 </p>
+    <ul>
+      <li>Developed and maintained web applications using Java and Spring framework</li>
+      <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+      <li>Participated in code reviews and provided constructive feedback to team members</li>
+    </ul>
+    
+    <h3>Junior Developer, ABC Corporation</h3>
+    <p>January 2016 - May 2018</p>
+    <ul>
+      <li>Assisted senior developers in building web applications using JavaScript and React</li>
+      <li>Performed bug fixes and implemented new features based on client requirements</li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <script>
+    function searchResume() {
+      const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+      const resumeContent = document.querySelector('.container').innerHTML;
+
+      const regex = new RegExp(searchTerm, 'gi');
+      const highlightedContent = resumeContent.replace(regex, '<span class="highlight">$&</span>');
+      document.querySelector('.container').innerHTML = highlightedContent;
+
+const numHighlights = document.querySelectorAll('.highlight').length;
+
+if (numHighlights > 0) {
+  alert(`Found ${numHighlights} matches in the resume!`);
+} else {
+  alert('No match found in the resume.');
+}
+}
+</script>
+
+</body>
+</html>
+ 
