@@ -15,15 +15,11 @@ const Home = () => {
         </div>
         
       </div>
-      
       <div className="logo-container">
-        
-          <Link to="/">
-            <img src={require("./ChelseaLogo.png")} alt="logo" className="logo" />
-          </Link>
-          
+        <Link to="/">
+          <img src={require("./ChelseaLogo.png")} alt="logo" className="logo" />
+        </Link>
       <div className="line"></div>
-      
       </div>
       {/* Rest of the home page content */}
     </div>
