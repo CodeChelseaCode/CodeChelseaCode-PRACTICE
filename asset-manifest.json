@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/codechelseacode.github.io/home.js/static/css/main.e786cb66.css",
+    "main.js": "/codechelseacode.github.io/home.js/static/js/main.75958530.js",
+    "static/js/787.c67d9748.chunk.js": "/codechelseacode.github.io/home.js/static/js/787.c67d9748.chunk.js",
+    "static/media/ChelseaLogo.png": "/codechelseacode.github.io/home.js/static/media/ChelseaLogo.bbe1220912ee3614e5a1.png",
+    "static/media/logo.svg": "/codechelseacode.github.io/home.js/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/codechelseacode.github.io/home.js/index.html",
+    "main.e786cb66.css.map": "/codechelseacode.github.io/home.js/static/css/main.e786cb66.css.map",
+    "main.75958530.js.map": "/codechelseacode.github.io/home.js/static/js/main.75958530.js.map",
+    "787.c67d9748.chunk.js.map": "/codechelseacode.github.io/home.js/static/js/787.c67d9748.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e786cb66.css",
+    "static/js/main.75958530.js"
+  ]
+}
